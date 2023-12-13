@@ -214,6 +214,8 @@ if __name__ == '__main__':
     else:
         trainer.train()
 
+    trainer.save_model('./flamingo-hm/save')
+
     logger.info('**** EVALUATE TEST SET ****')
     runs = 10
     acc_total = 0

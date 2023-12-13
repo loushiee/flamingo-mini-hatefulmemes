@@ -4,7 +4,7 @@ export CUDA_VISIBLE_DEVICES=0
 NUM_GPU=1
 
 ARGS="
---output_dir ./flamingo-coco
+--output_dir ./flamingo-hm
 --run_name flamingo-mini-vitL
 --do_train --do_eval
 --optim adamw_torch
@@ -12,7 +12,7 @@ ARGS="
 --weight_decay 0.7
 --learning_rate 0.00002
 --warmup_steps 2000
---per_device_train_batch_size 8
+--per_device_train_batch_size 16
 --per_device_eval_batch_size 64
 --gradient_accumulation_steps 1
 --evaluation_strategy epoch

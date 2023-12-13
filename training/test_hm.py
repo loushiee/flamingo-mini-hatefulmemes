@@ -46,7 +46,7 @@ def prepare_test_dataset():
 
     
 if __name__ == '__main__':
-    checkpoint_folder = 'flamingo-coco/checkpoint-10640'
+    checkpoint_folder = './flamingo-hm/save'
 
     logging.basicConfig(
         format=f'%(asctime)s {checkpoint_folder} %(message)s', 

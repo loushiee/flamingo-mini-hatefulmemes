@@ -1,2 +1,6 @@
-flamingo-coco
-
+flamingo-hm
+build
+dist
+flamingo_mini.egg-info
+wandb
+*pycache*
